@@ -1,0 +1,11 @@
+{
+  "name": "chuanlian",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --directory site",
+    "test": "node --check site/assets/app.js && node --test tests/static.test.mjs",
+    "test:live": "node scripts/check-supabase.mjs"
+  }
+}
